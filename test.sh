@@ -8,7 +8,7 @@ else
     exit 1
 fi
 
-if [ -f ./MARDOWN.md ]; then
+if [ -f ./MARKDOWN.md ]; then
     echo "Pass: MARKDOWN.md found"
 else
     echo "Fail: MARKDOWN.md  not found"

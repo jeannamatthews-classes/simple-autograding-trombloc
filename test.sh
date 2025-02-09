@@ -1,17 +1,17 @@
 echo "Running tests..."
 echo
 
-if [ -f ./FEEDBACK.txt ]; then
-    echo "Pass: FEEDBACK.txt found"
+if [ ./CheckFEEDBACK.sh ]; then
+    echo "Pass: CheckFEEDBACK"
 else
-    echo "Fail: FEEDBACK.txt not found"
+    echo "Fail: CheckFEEDBACK"
     exit 1
 fi
 
-if [ -f ./MARKDOWN.md ]; then
-    echo "Pass: MARKDOWN.md found"
+if [ ./CheckMARKDOWN.sh ]; then
+    echo "Pass: CheckMARKDOWN"
 else
-    echo "Fail: MARKDOWN.md  not found"
+    echo "Fail: CheckMARKDOWN"
     exit 1
 fi
 
